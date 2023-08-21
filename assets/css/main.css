@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
 body {
-  color: #442a2a;
+  color: #000;
   background: #e3f2fd;
   font-size: 15px;
   font-family: "Bricolage Grotesque", sans-serif;
@@ -80,7 +80,7 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
-  color: #191919;
+  color: #000;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -415,7 +415,7 @@ label {
 
 /* Header css start  */
 #header {
-  background: #e3f2fd;
+  background: #87ceeb;
   -webkit-transition: top 0.4s, padding 0.4s, background 0.2s;
   -o-transition: top 0.4s, padding 0.4s, background 0.2s;
   transition: top 0.4s, padding 0.4s, background 0.2s;
@@ -448,6 +448,15 @@ label {
 
 .header-logo img {
   width: 45px;
+}
+
+li.nav-item {
+  margin-right: 12px;
+}
+
+a.nav-link {
+  font-weight: 700;
+  color: #000;
 }
 
 /* Custom CSS for sections */
@@ -547,11 +556,11 @@ section p {
   max-width: 320px;
   position: relative;
   margin: 0 auto;
-  min-height: 320px;
+  min-height: 395px;
 }
 
 .card.card-just-text {
-  height: 320px;
+  height: 395px;
 }
 
 .coloured-cards .card {
@@ -587,12 +596,55 @@ section p {
 .card[data-background="color"] .card-footer,
 .card[data-background="color"] small,
 .card[data-background="color"] .content a {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #000; /* temporary css */
 }
+
+.service-img {
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.service-img.setting {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 65%;
+  transform: translateX(-50%);
+}
+
+.service-img.offer {
+  position: absolute;
+  top: -175px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.service-img.create {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+}
+
+.service-img.design {
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  width: 45%;
+  transform: translateX(-50%);
+}
+
 .card.card-just-text .content {
-  padding: 25px;
+  padding: 100px 25px 25px;
   text-align: center;
 }
+
 .card .content {
   padding: 20px 20px 10px 20px;
 }
@@ -636,7 +688,7 @@ h6,
   color: #66615b;
 }
 .content-card {
-  margin-top: 30px;
+  margin-top: 110px;
 }
 a:hover,
 a:focus {
@@ -645,18 +697,18 @@ a:focus {
 
 /*======== COLORS ===========*/
 .card[data-color="blue"] {
-  background: #98cfcf;
+  background: #5bbce7;
 }
-.card[data-color="blue"] .description {
+/* .card[data-color="blue"] .description {
   color: #506568;
-}
+} */
 
 .card[data-color="green"] {
-  background: #d5e5a3;
+  background: #11e4f8;
 }
-.card[data-color="green"] .description {
+/* .card[data-color="green"] .description {
   color: #60773d;
-}
+} */
 .card[data-color="green"] .category {
   color: #92ac56;
 }
@@ -664,39 +716,41 @@ a:focus {
 .card[data-color="yellow"] {
   background: #ffe28c;
 }
-.card[data-color="yellow"] .description {
+/* .card[data-color="yellow"] .description {
   color: #b25825;
-}
+} */
 .card[data-color="yellow"] .category {
   color: #d88715;
 }
 
 .card[data-color="brown"] {
-  background: #dfaf7c;
+  background: #fef102;
 }
+/* 
 .card[data-color="brown"] .description {
   color: #75442e;
-}
+} */
+
 .card[data-color="brown"] .category {
   color: #a47e65;
 }
 
 .card[data-color="purple"] {
-  background: #baa9ba;
+  background: #e04f5f;
 }
-.card[data-color="purple"] .description {
+/* .card[data-color="purple"] .description {
   color: #3a283d;
-}
+} */
 .card[data-color="purple"] .category {
   color: #5a283d;
 }
 
 .card[data-color="orange"] {
-  background: #ff8f5e;
+  background: #76c3a4;
 }
-.card[data-color="orange"] .description {
+/* .card[data-color="orange"] .description {
   color: #772510;
-}
+} */
 .card[data-color="orange"] .category {
   color: #e95e37;
 }
