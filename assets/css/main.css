@@ -702,9 +702,9 @@ section p {
 
 .service-img.offer {
   position: absolute;
-  top: -175px;
+  top: -100px;
   left: 50%;
-  width: 100%;
+  width: 55%;
   transform: translateX(-50%);
 }
 
@@ -808,7 +808,7 @@ a:focus {
 }
 
 .card[data-color="brown"] {
-  background: #fef102;
+  background: #ffda6f;
 }
 /* 
 .card[data-color="brown"] .description {
