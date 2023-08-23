@@ -269,3 +269,6 @@ $(function () {
         }, 500);
     });
 });
+
+// WOW animation js 
+new WOW().init();

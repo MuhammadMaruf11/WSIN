@@ -464,6 +464,7 @@ a.nav-link {
 /* Custom CSS for sections */
 section {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 section h2 {
