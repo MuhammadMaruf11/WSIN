@@ -231,6 +231,9 @@ $(function () {
           <div class="controles">
             <div class="control av"></div>
             <div class="control ret"></div>
+            <a href=${'#'} class="btn btn-outline-light mid">
+                See details
+            </a>
           </div>
         </div>`);
             $(".fullPreview").fadeIn().css("display", "flex");
