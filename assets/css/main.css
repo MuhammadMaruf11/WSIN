@@ -439,7 +439,7 @@ label {
 }
 
 .header-logo {
-  width: 150px;
+  /* width: 150px; */
   padding: 10px 0;
   font-weight: 700;
   font-family: "Playfair Display", serif;
@@ -1334,8 +1334,7 @@ a:focus {
 /* Why Choose Us css start  */
 
 #choose-us {
-  position: relative;
-  padding: 70px 0;
+  background: #fff;
 }
 
 .blog-card {
@@ -1354,20 +1353,20 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-.blog-card.card-1{
-  background-image: url('../img/light.png') ;
+.blog-card.card-1 {
+  background-image: url("../img/light-dark.png");
 }
-.blog-card.card-2{
-  background-image: url(http://127.0.0.1:5500/assets/img/hr-solution.png) ;
+.blog-card.card-2 {
+  background-image: url(http://127.0.0.1:5500/assets/img/hr-solution.png);
 }
-.blog-card.card-3{
-  background-image: url(http://127.0.0.1:5500/assets/img/study.jpg) ;
+.blog-card.card-3 {
+  background-image: url(http://127.0.0.1:5500/assets/img/study.jpg);
 }
-.blog-card.card-4{
-  background-image: url(http://127.0.0.1:5500/assets/img/market-linkage.png) ;
+.blog-card.card-4 {
+  background-image: url(http://127.0.0.1:5500/assets/img/market-linkage.png);
 }
-.blog-card.card-5{
-  background-image: url(http://127.0.0.1:5500/assets/img/charity.jpg) ;
+.blog-card.card-5 {
+  background-image: url(http://127.0.0.1:5500/assets/img/charity.jpg);
 }
 
 .blog-card a {
@@ -1386,7 +1385,8 @@ a:focus {
   transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 .blog-card .gradient-overlay {
-  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+  background-image: linear-gradient(transparent 0%, #00000099 21%);
+  background-image: linear-gradient(transparent 0%, #87ceeb80 21%);
   width: 550px;
   height: 500px;
   position: absolute;
@@ -1398,11 +1398,12 @@ a:focus {
   box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
 }
 .blog-card:hover .card-info {
-    opacity: 1;
-    bottom: 50px;
+  opacity: 1;
+  bottom: 50px;
 }
 .blog-card:hover .color-overlay {
-  background: rgba(64, 64, 70, 0.8);
+  background: #404046cc;
+  background: #243942cc;
 }
 .blog-card:hover .title-content {
   margin-top: 70px;
@@ -1423,8 +1424,7 @@ a:focus {
   width: 80%;
 }
 
-.blog-card h3,
-h1 {
+.blog-card h3 {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -1439,7 +1439,7 @@ h1 {
 .blog-card h3 a:hover {
   text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
 }
-h3:after {
+.title-content h3:after {
   content: " ";
   display: block;
   width: 10%;
@@ -1447,6 +1447,7 @@ h3:after {
   margin: 20px auto;
   border: 0;
   background: #bda26b;
+  background: #87ceeb;
   transition: all 0.2s;
 }
 
@@ -1508,6 +1509,7 @@ h3:after {
 
 .card-info a:hover {
   background: #8e7c49;
+  background: #87ceeb;
   color: #fff;
 }
 .card-info a:hover span {
@@ -1811,12 +1813,16 @@ h3:after {
 
 .hr-solution-content,
 .market-linkage-content {
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 1.8;
 }
 
+.service-details {
+  font-size: 18px;
+}
+
 .hr-solution-content a {
-  color: #0f0;
+  color: #42bf42;
 }
 
 @media (max-width: 768px) {
