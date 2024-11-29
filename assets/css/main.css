@@ -1857,6 +1857,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   font-size: 20px;
+  overflow: hidden;
 }
 
 footer a {
